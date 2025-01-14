@@ -1,0 +1,5 @@
+[0.023s] Invoking command in '/home/diego/csagv_foxy/build/lidar_node': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/diego/csagv_foxy/install/nmpc_node:/opt/ros/foxy /usr/bin/cmake --build /home/diego/csagv_foxy/build/lidar_node -- -j6 -l6
+[0.078s] [35m[1mScanning dependencies of target lidar_node[0m
+[0.150s] [ 50%] [32mBuilding CXX object CMakeFiles/lidar_node.dir/src/lidar_node.cpp.o[0m
+[14.036s] [100%] [32m[1mLinking CXX executable lidar_node[0m
+[16.021s] [100%] Built target lidar_node
