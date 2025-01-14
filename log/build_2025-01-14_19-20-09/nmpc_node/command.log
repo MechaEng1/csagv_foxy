@@ -1,2 +1,0 @@
-Invoking command in '/home/diego/csagv_foxy/build/nmpc_node': /usr/bin/cmake /home/diego/csagv_foxy/src/nmpc_node -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/diego/csagv_foxy/install/nmpc_node
-Invoked command in '/home/diego/csagv_foxy/build/nmpc_node' returned '1': /usr/bin/cmake /home/diego/csagv_foxy/src/nmpc_node -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/diego/csagv_foxy/install/nmpc_node

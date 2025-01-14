@@ -1,4 +1,0 @@
-[35m[1mScanning dependencies of target lidar_node[0m
-[ 50%] [32mBuilding CXX object CMakeFiles/lidar_node.dir/src/lidar_node.cpp.o[0m
-[100%] [32m[1mLinking CXX executable lidar_node[0m
-[100%] Built target lidar_node

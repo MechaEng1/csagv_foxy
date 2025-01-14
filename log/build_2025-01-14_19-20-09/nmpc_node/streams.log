@@ -1,4 +1,0 @@
-[0.025s] Invoking command in '/home/diego/csagv_foxy/build/nmpc_node': /usr/bin/cmake /home/diego/csagv_foxy/src/nmpc_node -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/diego/csagv_foxy/install/nmpc_node
-[0.034s] CMake Error: The source directory "/home/diego/csagv_foxy/src/nmpc_node" does not appear to contain CMakeLists.txt.
-[0.035s] Specify --help for usage, or press the help button on the CMake GUI.
-[0.044s] Invoked command in '/home/diego/csagv_foxy/build/nmpc_node' returned '1': /usr/bin/cmake /home/diego/csagv_foxy/src/nmpc_node -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/diego/csagv_foxy/install/nmpc_node
