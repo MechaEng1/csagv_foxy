@@ -1,0 +1,171 @@
+[0.030s] Invoking command in '/home/diego/csagv_foxy/build/lidar_node': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/diego/csagv_foxy/install/nmpc_node:/opt/ros/foxy: /usr/bin/cmake /home/diego/csagv_foxy/src/lidar_node -DCMAKE_INSTALL_PREFIX=/home/diego/csagv_foxy/install/lidar_node
+[0.078s] -- The C compiler identification is GNU 9.4.0
+[0.135s] -- The CXX compiler identification is GNU 9.4.0
+[0.139s] -- Check for working C compiler: /usr/bin/cc
+[0.214s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.214s] -- Detecting C compiler ABI info
+[0.274s] -- Detecting C compiler ABI info - done
+[0.284s] -- Detecting C compile features
+[0.284s] -- Detecting C compile features - done
+[0.286s] -- Check for working CXX compiler: /usr/bin/c++
+[0.355s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.356s] -- Detecting CXX compiler ABI info
+[0.420s] -- Detecting CXX compiler ABI info - done
+[0.430s] -- Detecting CXX compile features
+[0.430s] -- Detecting CXX compile features - done
+[0.432s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.453s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.453s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.640s] -- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.679s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.684s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.746s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[0.769s] -- Found FastRTPS: /opt/ros/foxy/include  
+[0.833s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.882s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.883s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.883s] -- Looking for pthread.h
+[0.950s] -- Looking for pthread.h - found
+[0.951s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.009s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[1.009s] -- Looking for pthread_create in pthreads
+[1.059s] -- Looking for pthread_create in pthreads - not found
+[1.059s] -- Looking for pthread_create in pthread
+[1.145s] -- Looking for pthread_create in pthread - found
+[1.145s] -- Found Threads: TRUE  
+[1.288s] -- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)
+[1.395s] -- Found pcl_conversions: 2.2.1 (/opt/ros/foxy/share/pcl_conversions/cmake)
+[1.551s] -- Found pcl_ros: 2.2.1 (/opt/ros/foxy/share/pcl_ros/cmake)
+[1.634s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/foxy/share/eigen3_cmake_module/cmake)
+[1.637s] -- Found Eigen3: TRUE (found version "3.3.7") 
+[1.991s] -- Checking for module 'eigen3'
+[2.002s] --   Found eigen3, version 3.3.7
+[2.033s] -- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") 
+[2.033s] -- Eigen found (include: /usr/include/eigen3, version: 3.3.7)
+[2.084s] -- Checking for module 'flann'
+[2.097s] --   Found flann, version 1.9.1
+[2.136s] -- Found FLANN: /usr/lib/x86_64-linux-gnu/libflann_cpp.so  
+[2.186s] -- The imported target "vtkParseOGLExt" references the file
+[2.186s]    "/usr/bin/vtkParseOGLExt-7.1"
+[2.186s] but this file does not exist.  Possible reasons include:
+[2.186s] * The file was deleted, renamed, or moved to another location.
+[2.186s] * An install or uninstall procedure did not complete successfully.
+[2.186s] * The installation package was faulty and contained
+[2.186s]    "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"
+[2.186s] but not all the files it references.
+[2.186s] 
+[2.187s] -- The imported target "vtkRenderingPythonTkWidgets" references the file
+[2.187s]    "/usr/lib/x86_64-linux-gnu/libvtkRenderingPythonTkWidgets.so"
+[2.187s] but this file does not exist.  Possible reasons include:
+[2.188s] * The file was deleted, renamed, or moved to another location.
+[2.188s] * An install or uninstall procedure did not complete successfully.
+[2.188s] * The installation package was faulty and contained
+[2.188s]    "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"
+[2.188s] but not all the files it references.
+[2.188s] 
+[2.189s] -- The imported target "vtk" references the file
+[2.189s]    "/usr/bin/vtk"
+[2.189s] but this file does not exist.  Possible reasons include:
+[2.189s] * The file was deleted, renamed, or moved to another location.
+[2.189s] * An install or uninstall procedure did not complete successfully.
+[2.189s] * The installation package was faulty and contained
+[2.189s]    "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"
+[2.189s] but not all the files it references.
+[2.189s] 
+[2.189s] -- The imported target "pvtk" references the file
+[2.190s]    "/usr/bin/pvtk"
+[2.190s] but this file does not exist.  Possible reasons include:
+[2.190s] * The file was deleted, renamed, or moved to another location.
+[2.190s] * An install or uninstall procedure did not complete successfully.
+[2.190s] * The installation package was faulty and contained
+[2.190s]    "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"
+[2.190s] but not all the files it references.
+[2.190s] 
+[2.207s] -- Checking for module 'libusb-1.0'
+[2.210s] --   No package 'libusb-1.0' found
+[2.213s] -- Could NOT find USB_10 (missing: USB_10_LIBRARY USB_10_INCLUDE_DIR) 
+[2.213s] -- OpenNI disabled because libusb-1.0 not found.
+[2.217s] -- Checking for module 'libusb-1.0'
+[2.220s] --   No package 'libusb-1.0' found
+[2.223s] -- Could NOT find USB_10 (missing: USB_10_LIBRARY USB_10_INCLUDE_DIR) 
+[2.223s] -- OpenNI 2 disabled because libusb-1.0 not found.
+[2.235s] -- LIBUSB_1_LIBRARY (missing: LIBUSB_1_INCLUDE_DIR) 
+[2.240s] -- Checking for module 'libusb-1.0'
+[2.243s] --   No package 'libusb-1.0' found
+[2.246s] -- Could NOT find USB_10 (missing: USB_10_LIBRARY USB_10_INCLUDE_DIR) 
+[2.246s] -- OpenNI disabled because libusb-1.0 not found.
+[2.250s] -- Checking for module 'libusb-1.0'
+[2.253s] --   No package 'libusb-1.0' found
+[2.255s] -- Could NOT find USB_10 (missing: USB_10_LIBRARY USB_10_INCLUDE_DIR) 
+[2.256s] -- OpenNI 2 disabled because libusb-1.0 not found.
+[2.277s] -- Found Qhull: optimized;/usr/lib/x86_64-linux-gnu/libqhull.so;debug;/usr/lib/x86_64-linux-gnu/libqhull.so  
+[2.277s] -- QHULL found (include: /usr/include, lib: optimized;/usr/lib/x86_64-linux-gnu/libqhull.so;debug;/usr/lib/x86_64-linux-gnu/libqhull.so)
+[2.282s] -- Checking for module 'libusb-1.0'
+[2.284s] --   No package 'libusb-1.0' found
+[2.287s] -- Could NOT find USB_10 (missing: USB_10_LIBRARY USB_10_INCLUDE_DIR) 
+[2.287s] -- OpenNI disabled because libusb-1.0 not found.
+[2.298s] -- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so  
+[2.299s] -- Found PCL_KDTREE: /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so  
+[2.300s] -- Found PCL_OCTREE: /usr/lib/x86_64-linux-gnu/libpcl_octree.so  
+[2.302s] -- Found PCL_SEARCH: /usr/lib/x86_64-linux-gnu/libpcl_search.so  
+[2.303s] -- Found PCL_SAMPLE_CONSENSUS: /usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so  
+[2.304s] -- Found PCL_FILTERS: /usr/lib/x86_64-linux-gnu/libpcl_filters.so  
+[2.304s] -- Found PCL_2D: /usr/include/pcl-1.10  
+[2.305s] -- Found PCL_GEOMETRY: /usr/include/pcl-1.10  
+[2.306s] -- Found PCL_IO: /usr/lib/x86_64-linux-gnu/libpcl_io.so  
+[2.307s] -- Found PCL_FEATURES: /usr/lib/x86_64-linux-gnu/libpcl_features.so  
+[2.308s] -- Found PCL_ML: /usr/lib/x86_64-linux-gnu/libpcl_ml.so  
+[2.309s] -- Found PCL_SEGMENTATION: /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so  
+[2.311s] -- Found PCL_VISUALIZATION: /usr/lib/x86_64-linux-gnu/libpcl_visualization.so  
+[2.312s] -- Found PCL_SURFACE: /usr/lib/x86_64-linux-gnu/libpcl_surface.so  
+[2.313s] -- Found PCL_REGISTRATION: /usr/lib/x86_64-linux-gnu/libpcl_registration.so  
+[2.314s] -- Found PCL_KEYPOINTS: /usr/lib/x86_64-linux-gnu/libpcl_keypoints.so  
+[2.316s] -- Found PCL_TRACKING: /usr/lib/x86_64-linux-gnu/libpcl_tracking.so  
+[2.317s] -- Found PCL_RECOGNITION: /usr/lib/x86_64-linux-gnu/libpcl_recognition.so  
+[2.318s] -- Found PCL_STEREO: /usr/lib/x86_64-linux-gnu/libpcl_stereo.so  
+[2.319s] -- Found PCL_APPS: /usr/lib/x86_64-linux-gnu/libpcl_apps.so  
+[2.320s] -- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.10  
+[2.321s] -- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.10  
+[2.322s] -- Found PCL_OUTOFCORE: /usr/lib/x86_64-linux-gnu/libpcl_outofcore.so  
+[2.323s] -- Found PCL_PEOPLE: /usr/lib/x86_64-linux-gnu/libpcl_people.so  
+[2.494s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[2.599s] -- Added test 'copyright' to check source files copyright and LICENSE
+[2.604s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.604s] -- Configured cppcheck include dirs: 
+[2.604s] -- Configured cppcheck exclude dirs and/or files: 
+[2.605s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[2.605s] -- Configured cpplint exclude dirs and/or files: 
+[2.606s] -- Added test 'lint_cmake' to check CMake code style
+[2.607s] -- Added test 'uncrustify' to check C / C++ code style
+[2.607s] -- Configured uncrustify additional arguments: 
+[2.607s] -- Added test 'xmllint' to check XML markup files
+[2.610s] -- Configuring done
+[2.642s] -- Generating done
+[2.655s] -- Build files have been written to: /home/diego/csagv_foxy/build/lidar_node
+[2.679s] Invoked command in '/home/diego/csagv_foxy/build/lidar_node' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/diego/csagv_foxy/install/nmpc_node:/opt/ros/foxy: /usr/bin/cmake /home/diego/csagv_foxy/src/lidar_node -DCMAKE_INSTALL_PREFIX=/home/diego/csagv_foxy/install/lidar_node
+[2.681s] Invoking command in '/home/diego/csagv_foxy/build/lidar_node': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/diego/csagv_foxy/install/nmpc_node:/opt/ros/foxy: /usr/bin/cmake --build /home/diego/csagv_foxy/build/lidar_node -- -j6 -l6
+[2.718s] [35m[1mScanning dependencies of target lidar_node[0m
+[2.779s] [ 50%] [32mBuilding CXX object CMakeFiles/lidar_node.dir/src/lidar_node.cpp.o[0m
+[14.600s] [100%] [32m[1mLinking CXX executable lidar_node[0m
+[16.139s] [100%] Built target lidar_node
+[16.149s] Invoked command in '/home/diego/csagv_foxy/build/lidar_node' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/diego/csagv_foxy/install/nmpc_node:/opt/ros/foxy: /usr/bin/cmake --build /home/diego/csagv_foxy/build/lidar_node -- -j6 -l6
+[16.162s] Invoking command in '/home/diego/csagv_foxy/build/lidar_node': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/diego/csagv_foxy/install/nmpc_node:/opt/ros/foxy: /usr/bin/cmake --install /home/diego/csagv_foxy/build/lidar_node
+[16.169s] -- Install configuration: ""
+[16.169s] -- Installing: /home/diego/csagv_foxy/install/lidar_node/lib/lidar_node/lidar_node
+[16.171s] -- Set runtime path of "/home/diego/csagv_foxy/install/lidar_node/lib/lidar_node/lidar_node" to ""
+[16.171s] -- Installing: /home/diego/csagv_foxy/install/lidar_node/share/ament_index/resource_index/package_run_dependencies/lidar_node
+[16.171s] -- Installing: /home/diego/csagv_foxy/install/lidar_node/share/ament_index/resource_index/parent_prefix_path/lidar_node
+[16.171s] -- Installing: /home/diego/csagv_foxy/install/lidar_node/share/lidar_node/environment/ament_prefix_path.sh
+[16.171s] -- Installing: /home/diego/csagv_foxy/install/lidar_node/share/lidar_node/environment/ament_prefix_path.dsv
+[16.172s] -- Installing: /home/diego/csagv_foxy/install/lidar_node/share/lidar_node/environment/path.sh
+[16.172s] -- Installing: /home/diego/csagv_foxy/install/lidar_node/share/lidar_node/environment/path.dsv
+[16.172s] -- Installing: /home/diego/csagv_foxy/install/lidar_node/share/lidar_node/local_setup.bash
+[16.172s] -- Installing: /home/diego/csagv_foxy/install/lidar_node/share/lidar_node/local_setup.sh
+[16.172s] -- Installing: /home/diego/csagv_foxy/install/lidar_node/share/lidar_node/local_setup.zsh
+[16.172s] -- Installing: /home/diego/csagv_foxy/install/lidar_node/share/lidar_node/local_setup.dsv
+[16.172s] -- Installing: /home/diego/csagv_foxy/install/lidar_node/share/lidar_node/package.dsv
+[16.172s] -- Installing: /home/diego/csagv_foxy/install/lidar_node/share/ament_index/resource_index/packages/lidar_node
+[16.172s] -- Installing: /home/diego/csagv_foxy/install/lidar_node/share/lidar_node/cmake/lidar_nodeConfig.cmake
+[16.173s] -- Installing: /home/diego/csagv_foxy/install/lidar_node/share/lidar_node/cmake/lidar_nodeConfig-version.cmake
+[16.173s] -- Installing: /home/diego/csagv_foxy/install/lidar_node/share/lidar_node/package.xml
+[16.176s] Invoked command in '/home/diego/csagv_foxy/build/lidar_node' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/diego/csagv_foxy/install/nmpc_node:/opt/ros/foxy: /usr/bin/cmake --install /home/diego/csagv_foxy/build/lidar_node

@@ -1,0 +1,24 @@
+[0.535s] Invoking command in '/home/diego/csagv_foxy/src/nmpc_node': PYTHONPATH=/home/diego/csagv_foxy/build/nmpc_node/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/diego/csagv_foxy/install/nmpc_node/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/nmpc_node build --build-base /home/diego/csagv_foxy/build/nmpc_node/build install --record /home/diego/csagv_foxy/build/nmpc_node/install.log --install-scripts $base/lib/nmpc_node --single-version-externally-managed install_data
+[0.715s] running egg_info
+[0.715s] writing ../../build/nmpc_node/nmpc_node.egg-info/PKG-INFO
+[0.716s] writing dependency_links to ../../build/nmpc_node/nmpc_node.egg-info/dependency_links.txt
+[0.716s] writing entry points to ../../build/nmpc_node/nmpc_node.egg-info/entry_points.txt
+[0.716s] writing requirements to ../../build/nmpc_node/nmpc_node.egg-info/requires.txt
+[0.716s] writing top-level names to ../../build/nmpc_node/nmpc_node.egg-info/top_level.txt
+[0.747s] reading manifest file '../../build/nmpc_node/nmpc_node.egg-info/SOURCES.txt'
+[0.748s] writing manifest file '../../build/nmpc_node/nmpc_node.egg-info/SOURCES.txt'
+[0.748s] running build
+[0.748s] running build_py
+[0.748s] copying nmpc_node/nmpc_code.py -> /home/diego/csagv_foxy/build/nmpc_node/build/lib/nmpc_node
+[0.749s] running install
+[0.750s] running install_lib
+[0.750s] copying /home/diego/csagv_foxy/build/nmpc_node/build/lib/nmpc_node/nmpc_code.py -> /home/diego/csagv_foxy/install/nmpc_node/lib/python3.8/site-packages/nmpc_node
+[0.751s] byte-compiling /home/diego/csagv_foxy/install/nmpc_node/lib/python3.8/site-packages/nmpc_node/nmpc_code.py to nmpc_code.cpython-38.pyc
+[0.753s] running install_data
+[0.753s] running install_egg_info
+[0.755s] removing '/home/diego/csagv_foxy/install/nmpc_node/lib/python3.8/site-packages/nmpc_node-0.0.0-py3.8.egg-info' (and everything under it)
+[0.755s] Copying ../../build/nmpc_node/nmpc_node.egg-info to /home/diego/csagv_foxy/install/nmpc_node/lib/python3.8/site-packages/nmpc_node-0.0.0-py3.8.egg-info
+[0.756s] running install_scripts
+[0.771s] Installing nmpc_node script to /home/diego/csagv_foxy/install/nmpc_node/lib/nmpc_node
+[0.772s] writing list of installed files to '/home/diego/csagv_foxy/build/nmpc_node/install.log'
+[0.789s] Invoked command in '/home/diego/csagv_foxy/src/nmpc_node' returned '0': PYTHONPATH=/home/diego/csagv_foxy/build/nmpc_node/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/diego/csagv_foxy/install/nmpc_node/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/nmpc_node build --build-base /home/diego/csagv_foxy/build/nmpc_node/build install --record /home/diego/csagv_foxy/build/nmpc_node/install.log --install-scripts $base/lib/nmpc_node --single-version-externally-managed install_data

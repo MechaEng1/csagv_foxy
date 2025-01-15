@@ -14,16 +14,19 @@ class NMPCNode(Node):
         super().__init__('nmpc_node')
 
         # Intervallo di tempo tra un passo e l'altro
-        self.dt = 0.1  # Secondi
+        self.dt = 0.1                                       # Secondi
         # Numero di passi nell'orizzonte di predizione
         self.N = 20
 
         # Stato iniziale del robot (x, y, theta)
-        self.x0 = np.zeros((3, 1))  # [x, y, theta]
+        self.x0 = np.zeros((3, 1))                          # [x, y, theta]
+
         # Controlli iniziali (velocità lineare e angolare)
-        self.u0 = np.zeros((2, self.N))  # [v, omega]
+        self.u0 = np.zeros((2, self.N))                     # [v, omega]
+
         # Posizione di riferimento (target)
-        self.x_ref = np.zeros((3, 1))  # [x_ref, y_ref, theta_ref]
+        self.x_ref = np.zeros((3, 1))                       # [x_ref, y_ref, theta_ref]
+
 
         # Definizione del modello dinamico del robot
         self.model = self.define_model()
@@ -33,8 +36,10 @@ class NMPCNode(Node):
 
         # Publisher per inviare comandi al robot
         self.control_publisher = self.create_publisher(Twist, "/cmd_vel", 10)
+
         # Subscriber per ricevere la posizione odometrica del robot
         self.odom_subscription = self.create_subscription(Odometry, "/odom", self.odom_callback, 10)
+
         # Subscriber per ricevere la posizione del cono
         self.cone_subscription = self.create_subscription(Point, "/cone_position", self.cone_callback, 10)
 
@@ -43,25 +48,24 @@ class NMPCNode(Node):
 
     def define_model(self):
         # Creazione del modello continuo a uniciclo
-
         model_type = 'continuous'  # Tipo di modello
         model = Model(model_type)
 
 
         # Variabili di stato
         L = 0.5
-        x = model.set_variable(var_type='_x', var_name='x')  # Posizione x
-        y = model.set_variable(var_type='_x', var_name='y')  # Posizione y
-        theta = model.set_variable(var_type='_x', var_name='theta')  # Orientamento
+        x = model.set_variable(var_type='_x', var_name='x')             # Posizione x
+        y = model.set_variable(var_type='_x', var_name='y')             # Posizione y
+        theta = model.set_variable(var_type='_x', var_name='theta')     # Orientamento
 
         # Variabili di controllo
-        v = model.set_variable(var_type='_u', var_name='v')  # Velocità lineare
-        omega = model.set_variable(var_type='_u', var_name='omega')  # Velocità angolare
+        v = model.set_variable(var_type='_u', var_name='v')             # Velocità lineare
+        omega = model.set_variable(var_type='_u', var_name='omega')     # Velocità angolare
 
         # Equazioni dinamiche del modello uniciclo
-        model.set_rhs('x', v * cos(theta))  # Derivata di x
-        model.set_rhs('y', v * sin(theta))  # Derivata di y
-        model.set_rhs('theta', v/L*tan(omega))  # Derivata di theta
+        model.set_rhs('x', v * cos(theta))                              # Derivata di x
+        model.set_rhs('y', v * sin(theta))                              # Derivata di y
+        model.set_rhs('theta', v/L*tan(omega))                          # Derivata di theta
 
         # Configurazione del modello
         model.setup()
@@ -73,18 +77,18 @@ class NMPCNode(Node):
 
         # Configurazione dei parametri NMPC
         setup_mpc = {
-            'n_horizon': self.N,  # Numero di passi nell'orizzonte
-            't_step': self.dt,  # Intervallo di tempo tra i passi
-            'state_discretization': 'collocation',  # Metodo di discretizzazione
-            'collocation_type': 'radau',  # Tipo di collocazione
-            'store_full_solution': True,  # Memorizzazione della soluzione completa
-            'nlpsol_opts': {'ipopt.print_level': 0, 'ipopt.sb': 'yes', 'print_time': 0}  # Opzioni per il solver
+            'n_horizon': self.N,                                                            # Numero di passi nell'orizzonte
+            't_step': self.dt,                                                              # Intervallo di tempo tra i passi
+            'state_discretization': 'collocation',                                          # Metodo di discretizzazione
+            'collocation_type': 'radau',                                                    # Tipo di collocazione
+            'store_full_solution': True,                                                    # Memorizzazione della soluzione completa
+            'nlpsol_opts': {'ipopt.print_level': 0, 'ipopt.sb': 'yes', 'print_time': 0}     # Opzioni per il solver
         }
         mpc.set_param(**setup_mpc)
 
         # Funzione di costo per obstacle avoidance
-        safe_distance = 1.0  # Distanza di sicurezza dal cono
-        penalty_factor = 50  # Penalità per violazione della distanza
+        safe_distance = 1.0                                             # Distanza di sicurezza dal cono
+        penalty_factor = 50                                             # Penalità per violazione della distanza
 
         # Costo terminale: Minimizza la distanza dal punto obiettivo (passando intorno al cono)
         mpc.set_objective(
@@ -97,11 +101,13 @@ class NMPCNode(Node):
             )
         )
 
+        mpc.set_rterm(v = 60/3, omega = 30/1)                           # Penalità sui comandi
+
         # Vincoli sui controlli
-        mpc.bounds['lower', '_u', 'v'] = 0.0  # Velocità lineare minima
-        mpc.bounds['upper', '_u', 'v'] = 1.5  # Velocità lineare massima
-        mpc.bounds['lower', '_u', 'omega'] = -1.0  # Velocità angolare minima
-        mpc.bounds['upper', '_u', 'omega'] = 1.0  # Velocità angolare massima
+        mpc.bounds['lower', '_u', 'v'] = 0.0                            # Velocità lineare minima
+        mpc.bounds['upper', '_u', 'v'] = 1.5                            # Velocità lineare massima
+        mpc.bounds['lower', '_u', 'omega'] = -1.0                       # Velocità angolare minima
+        mpc.bounds['upper', '_u', 'omega'] = 1.0                        # Velocità angolare massima
 
         # Configurazione finale del controller
         mpc.setup()

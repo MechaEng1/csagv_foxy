@@ -1,0 +1,16 @@
+/home/diego/csagv_foxy/install/lidar_node/lib/lidar_node/lidar_node
+/home/diego/csagv_foxy/install/lidar_node/share/ament_index/resource_index/package_run_dependencies/lidar_node
+/home/diego/csagv_foxy/install/lidar_node/share/ament_index/resource_index/parent_prefix_path/lidar_node
+/home/diego/csagv_foxy/install/lidar_node/share/lidar_node/environment/ament_prefix_path.sh
+/home/diego/csagv_foxy/install/lidar_node/share/lidar_node/environment/ament_prefix_path.dsv
+/home/diego/csagv_foxy/install/lidar_node/share/lidar_node/environment/path.sh
+/home/diego/csagv_foxy/install/lidar_node/share/lidar_node/environment/path.dsv
+/home/diego/csagv_foxy/install/lidar_node/share/lidar_node/local_setup.bash
+/home/diego/csagv_foxy/install/lidar_node/share/lidar_node/local_setup.sh
+/home/diego/csagv_foxy/install/lidar_node/share/lidar_node/local_setup.zsh
+/home/diego/csagv_foxy/install/lidar_node/share/lidar_node/local_setup.dsv
+/home/diego/csagv_foxy/install/lidar_node/share/lidar_node/package.dsv
+/home/diego/csagv_foxy/install/lidar_node/share/ament_index/resource_index/packages/lidar_node
+/home/diego/csagv_foxy/install/lidar_node/share/lidar_node/cmake/lidar_nodeConfig.cmake
+/home/diego/csagv_foxy/install/lidar_node/share/lidar_node/cmake/lidar_nodeConfig-version.cmake
+/home/diego/csagv_foxy/install/lidar_node/share/lidar_node/package.xml

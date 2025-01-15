@@ -1,0 +1,364 @@
+[0.000000] (-) TimerEvent: {}
+[0.000709] (lidar_node) JobQueued: {'identifier': 'lidar_node', 'dependencies': OrderedDict()}
+[0.000813] (nmpc_node) JobQueued: {'identifier': 'nmpc_node', 'dependencies': OrderedDict()}
+[0.000847] (lidar_node) JobStarted: {'identifier': 'lidar_node'}
+[0.008281] (nmpc_node) JobStarted: {'identifier': 'nmpc_node'}
+[0.016296] (lidar_node) JobProgress: {'identifier': 'lidar_node', 'progress': 'cmake'}
+[0.023442] (lidar_node) Command: {'cmd': ['/usr/bin/cmake', '/home/diego/csagv_foxy/src/lidar_node', '-DCMAKE_INSTALL_PREFIX=/home/diego/csagv_foxy/install/lidar_node'], 'cwd': '/home/diego/csagv_foxy/build/lidar_node', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'it:en'), ('USER', 'diego'), ('LC_TIME', 'de_DE.UTF-8'), ('SSH_AGENT_PID', '958'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/diego'), ('OLDPWD', '/home/diego'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'de_DE.UTF-8'), ('MANAGERPID', '835'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2370'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/diego/csagv_foxy/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'diego'), ('JOURNAL_STREAM', '8:27339'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'diego'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/Ubuntu:@/tmp/.ICE-unix/1020,unix/Ubuntu:/tmp/.ICE-unix/1020'), ('INVOCATION_ID', 'bd64ae3125764dd98123abaffcde7904'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'de_DE.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'it_IT.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'de_DE.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/diego/csagv_foxy/install/nmpc_node:/home/diego/csagv_foxy/install/lidar_node:/opt/ros/foxy::'), ('SHELL', '/bin/bash'), ('LC_NAME', 'de_DE.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:86d34b99-401d-40ea-9bca-4145879aab32'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'de_DE.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'de_DE.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/diego/csagv_foxy/build/lidar_node'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/diego/csagv_foxy/install/nmpc_node/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'de_DE.UTF-8'), ('LC_PAPER', 'de_DE.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/diego/csagv_foxy/install/lidar_node:/home/diego/csagv_foxy/install/nmpc_node:/opt/ros/foxy:')]), 'shell': False}
+[0.078672] (lidar_node) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[0.100273] (-) TimerEvent: {}
+[0.135659] (lidar_node) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[0.139637] (lidar_node) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[0.200765] (-) TimerEvent: {}
+[0.214510] (lidar_node) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[0.215024] (lidar_node) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.275162] (lidar_node) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.284504] (lidar_node) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.284766] (lidar_node) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.286746] (lidar_node) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[0.301382] (-) TimerEvent: {}
+[0.355836] (lidar_node) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[0.356719] (lidar_node) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.401480] (-) TimerEvent: {}
+[0.421139] (lidar_node) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.430874] (lidar_node) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.431270] (lidar_node) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.432910] (lidar_node) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[0.453890] (lidar_node) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[0.454057] (lidar_node) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.501528] (-) TimerEvent: {}
+[0.602053] (-) TimerEvent: {}
+[0.610442] (nmpc_node) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/nmpc_node', 'build', '--build-base', '/home/diego/csagv_foxy/build/nmpc_node/build', 'install', '--record', '/home/diego/csagv_foxy/build/nmpc_node/install.log', '--install-scripts', '$base/lib/nmpc_node', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/diego/csagv_foxy/src/nmpc_node', 'env': {'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'it:en', 'USER': 'diego', 'LC_TIME': 'de_DE.UTF-8', 'SSH_AGENT_PID': '958', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib', 'HOME': '/home/diego', 'OLDPWD': '/home/diego', 'DESKTOP_SESSION': 'ubuntu', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/terminator.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'de_DE.UTF-8', 'MANAGERPID': '835', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '2370', 'IM_CONFIG_PHASE': '1', 'COLCON_PREFIX_PATH': '/home/diego/csagv_foxy/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'diego', 'JOURNAL_STREAM': '8:27339', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'diego', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SESSION_MANAGER': 'local/Ubuntu:@/tmp/.ICE-unix/1020,unix/Ubuntu:/tmp/.ICE-unix/1020', 'INVOCATION_ID': 'bd64ae3125764dd98123abaffcde7904', 'PAPERSIZE': 'a4', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'de_DE.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'it_IT.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'de_DE.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/diego/csagv_foxy/install/nmpc_node:/home/diego/csagv_foxy/install/lidar_node:/opt/ros/foxy::', 'SHELL': '/bin/bash', 'LC_NAME': 'de_DE.UTF-8', 'TERMINATOR_UUID': 'urn:uuid:86d34b99-401d-40ea-9bca-4145879aab32', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'de_DE.UTF-8', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', 'LC_IDENTIFICATION': 'de_DE.UTF-8', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/diego/csagv_foxy/build/nmpc_node', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/diego/csagv_foxy/build/nmpc_node/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/diego/csagv_foxy/install/nmpc_node/lib/python3.8/site-packages:/home/diego/csagv_foxy/install/nmpc_node/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'LC_NUMERIC': 'de_DE.UTF-8', 'LC_PAPER': 'de_DE.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6003', 'CMAKE_PREFIX_PATH': '/home/diego/csagv_foxy/install/lidar_node'}, 'shell': False}
+[0.640842] (lidar_node) StdoutLine: {'line': b'-- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)\n'}
+[0.680090] (lidar_node) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.685124] (lidar_node) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[0.702093] (-) TimerEvent: {}
+[0.746248] (lidar_node) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  \n'}
+[0.770124] (lidar_node) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/foxy/include  \n'}
+[0.801290] (nmpc_node) StdoutLine: {'line': b'running egg_info\n'}
+[0.802034] (nmpc_node) StdoutLine: {'line': b'writing ../../build/nmpc_node/nmpc_node.egg-info/PKG-INFO\n'}
+[0.802171] (-) TimerEvent: {}
+[0.802575] (nmpc_node) StdoutLine: {'line': b'writing dependency_links to ../../build/nmpc_node/nmpc_node.egg-info/dependency_links.txt\n'}
+[0.802988] (nmpc_node) StdoutLine: {'line': b'writing entry points to ../../build/nmpc_node/nmpc_node.egg-info/entry_points.txt\n'}
+[0.803315] (nmpc_node) StdoutLine: {'line': b'writing requirements to ../../build/nmpc_node/nmpc_node.egg-info/requires.txt\n'}
+[0.803627] (nmpc_node) StdoutLine: {'line': b'writing top-level names to ../../build/nmpc_node/nmpc_node.egg-info/top_level.txt\n'}
+[0.831430] (nmpc_node) StdoutLine: {'line': b"reading manifest file '../../build/nmpc_node/nmpc_node.egg-info/SOURCES.txt'\n"}
+[0.832293] (nmpc_node) StdoutLine: {'line': b"writing manifest file '../../build/nmpc_node/nmpc_node.egg-info/SOURCES.txt'\n"}
+[0.832528] (nmpc_node) StdoutLine: {'line': b'running build\n'}
+[0.832607] (nmpc_node) StdoutLine: {'line': b'running build_py\n'}
+[0.832997] (nmpc_node) StdoutLine: {'line': b'running install\n'}
+[0.833621] (lidar_node) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.837709] (nmpc_node) StdoutLine: {'line': b'running install_lib\n'}
+[0.837871] (nmpc_node) StdoutLine: {'line': b'running install_data\n'}
+[0.837931] (nmpc_node) StdoutLine: {'line': b'running install_egg_info\n'}
+[0.837986] (nmpc_node) StdoutLine: {'line': b"removing '/home/diego/csagv_foxy/install/nmpc_node/lib/python3.8/site-packages/nmpc_node-0.0.0-py3.8.egg-info' (and everything under it)\n"}
+[0.838046] (nmpc_node) StdoutLine: {'line': b'Copying ../../build/nmpc_node/nmpc_node.egg-info to /home/diego/csagv_foxy/install/nmpc_node/lib/python3.8/site-packages/nmpc_node-0.0.0-py3.8.egg-info\n'}
+[0.838703] (nmpc_node) StdoutLine: {'line': b'running install_scripts\n'}
+[0.852135] (nmpc_node) StdoutLine: {'line': b'Installing nmpc_node script to /home/diego/csagv_foxy/install/nmpc_node/lib/nmpc_node\n'}
+[0.852531] (nmpc_node) StdoutLine: {'line': b"writing list of installed files to '/home/diego/csagv_foxy/build/nmpc_node/install.log'\n"}
+[0.870691] (nmpc_node) CommandEnded: {'returncode': 0}
+[0.880165] (nmpc_node) JobEnded: {'identifier': 'nmpc_node', 'rc': 0}
+[0.882310] (lidar_node) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)\n'}
+[0.883478] (lidar_node) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.884199] (lidar_node) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[0.902351] (-) TimerEvent: {}
+[0.951128] (lidar_node) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[0.951375] (lidar_node) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[1.003224] (-) TimerEvent: {}
+[1.009443] (lidar_node) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed\n'}
+[1.009699] (lidar_node) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads\n'}
+[1.059701] (lidar_node) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads - not found\n'}
+[1.059894] (lidar_node) StdoutLine: {'line': b'-- Looking for pthread_create in pthread\n'}
+[1.105093] (-) TimerEvent: {}
+[1.145823] (lidar_node) StdoutLine: {'line': b'-- Looking for pthread_create in pthread - found\n'}
+[1.146018] (lidar_node) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[1.205656] (-) TimerEvent: {}
+[1.288282] (lidar_node) StdoutLine: {'line': b'-- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)\n'}
+[1.305775] (-) TimerEvent: {}
+[1.395670] (lidar_node) StdoutLine: {'line': b'-- Found pcl_conversions: 2.2.1 (/opt/ros/foxy/share/pcl_conversions/cmake)\n'}
+[1.406745] (-) TimerEvent: {}
+[1.507024] (-) TimerEvent: {}
+[1.551869] (lidar_node) StdoutLine: {'line': b'-- Found pcl_ros: 2.2.1 (/opt/ros/foxy/share/pcl_ros/cmake)\n'}
+[1.607879] (-) TimerEvent: {}
+[1.635058] (lidar_node) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/foxy/share/eigen3_cmake_module/cmake)\n'}
+[1.637435] (lidar_node) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.3.7") \n'}
+[1.708395] (-) TimerEvent: {}
+[1.808949] (-) TimerEvent: {}
+[1.909431] (-) TimerEvent: {}
+[1.991816] (lidar_node) StdoutLine: {'line': b"-- Checking for module 'eigen3'\n"}
+[2.003196] (lidar_node) StdoutLine: {'line': b'--   Found eigen3, version 3.3.7\n'}
+[2.009727] (-) TimerEvent: {}
+[2.033369] (lidar_node) StdoutLine: {'line': b'-- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") \n'}
+[2.033560] (lidar_node) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.3.7)\n'}
+[2.084981] (lidar_node) StdoutLine: {'line': b"-- Checking for module 'flann'\n"}
+[2.098232] (lidar_node) StdoutLine: {'line': b'--   Found flann, version 1.9.1\n'}
+[2.109743] (-) TimerEvent: {}
+[2.136316] (lidar_node) StdoutLine: {'line': b'-- Found FLANN: /usr/lib/x86_64-linux-gnu/libflann_cpp.so  \n'}
+[2.186460] (lidar_node) StdoutLine: {'line': b'-- The imported target "vtkParseOGLExt" references the file\n'}
+[2.186653] (lidar_node) StdoutLine: {'line': b'   "/usr/bin/vtkParseOGLExt-7.1"\n'}
+[2.186736] (lidar_node) StdoutLine: {'line': b'but this file does not exist.  Possible reasons include:\n'}
+[2.186823] (lidar_node) StdoutLine: {'line': b'* The file was deleted, renamed, or moved to another location.\n'}
+[2.186881] (lidar_node) StdoutLine: {'line': b'* An install or uninstall procedure did not complete successfully.\n'}
+[2.186936] (lidar_node) StdoutLine: {'line': b'* The installation package was faulty and contained\n'}
+[2.186992] (lidar_node) StdoutLine: {'line': b'   "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"\n'}
+[2.187047] (lidar_node) StdoutLine: {'line': b'but not all the files it references.\n'}
+[2.187102] (lidar_node) StdoutLine: {'line': b'\n'}
+[2.188117] (lidar_node) StdoutLine: {'line': b'-- The imported target "vtkRenderingPythonTkWidgets" references the file\n'}
+[2.188209] (lidar_node) StdoutLine: {'line': b'   "/usr/lib/x86_64-linux-gnu/libvtkRenderingPythonTkWidgets.so"\n'}
+[2.188270] (lidar_node) StdoutLine: {'line': b'but this file does not exist.  Possible reasons include:\n'}
+[2.188328] (lidar_node) StdoutLine: {'line': b'* The file was deleted, renamed, or moved to another location.\n'}
+[2.188383] (lidar_node) StdoutLine: {'line': b'* An install or uninstall procedure did not complete successfully.\n'}
+[2.188438] (lidar_node) StdoutLine: {'line': b'* The installation package was faulty and contained\n'}
+[2.188521] (lidar_node) StdoutLine: {'line': b'   "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"\n'}
+[2.188587] (lidar_node) StdoutLine: {'line': b'but not all the files it references.\n'}
+[2.188644] (lidar_node) StdoutLine: {'line': b'\n'}
+[2.189355] (lidar_node) StdoutLine: {'line': b'-- The imported target "vtk" references the file\n'}
+[2.189460] (lidar_node) StdoutLine: {'line': b'   "/usr/bin/vtk"\n'}
+[2.189525] (lidar_node) StdoutLine: {'line': b'but this file does not exist.  Possible reasons include:\n'}
+[2.189581] (lidar_node) StdoutLine: {'line': b'* The file was deleted, renamed, or moved to another location.\n'}
+[2.189684] (lidar_node) StdoutLine: {'line': b'* An install or uninstall procedure did not complete successfully.\n'}
+[2.189752] (lidar_node) StdoutLine: {'line': b'* The installation package was faulty and contained\n'}
+[2.189808] (lidar_node) StdoutLine: {'line': b'   "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"\n'}
+[2.189862] (lidar_node) StdoutLine: {'line': b'but not all the files it references.\n'}
+[2.189917] (lidar_node) StdoutLine: {'line': b'\n'}
+[2.190246] (lidar_node) StdoutLine: {'line': b'-- The imported target "pvtk" references the file\n'}
+[2.190330] (lidar_node) StdoutLine: {'line': b'   "/usr/bin/pvtk"\n'}
+[2.190418] (lidar_node) StdoutLine: {'line': b'but this file does not exist.  Possible reasons include:\n'}
+[2.190478] (lidar_node) StdoutLine: {'line': b'* The file was deleted, renamed, or moved to another location.\n'}
+[2.190533] (lidar_node) StdoutLine: {'line': b'* An install or uninstall procedure did not complete successfully.\n'}
+[2.190588] (lidar_node) StdoutLine: {'line': b'* The installation package was faulty and contained\n'}
+[2.190643] (lidar_node) StdoutLine: {'line': b'   "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"\n'}
+[2.190697] (lidar_node) StdoutLine: {'line': b'but not all the files it references.\n'}
+[2.190765] (lidar_node) StdoutLine: {'line': b'\n'}
+[2.207947] (lidar_node) StdoutLine: {'line': b"-- Checking for module 'libusb-1.0'\n"}
+[2.209990] (-) TimerEvent: {}
+[2.210935] (lidar_node) StdoutLine: {'line': b"--   No package 'libusb-1.0' found\n"}
+[2.213492] (lidar_node) StdoutLine: {'line': b'-- Could NOT find USB_10 (missing: USB_10_LIBRARY USB_10_INCLUDE_DIR) \n'}
+[2.213614] (lidar_node) StdoutLine: {'line': b'-- OpenNI disabled because libusb-1.0 not found.\n'}
+[2.218130] (lidar_node) StdoutLine: {'line': b"-- Checking for module 'libusb-1.0'\n"}
+[2.220927] (lidar_node) StdoutLine: {'line': b"--   No package 'libusb-1.0' found\n"}
+[2.223314] (lidar_node) StdoutLine: {'line': b'-- Could NOT find USB_10 (missing: USB_10_LIBRARY USB_10_INCLUDE_DIR) \n'}
+[2.223498] (lidar_node) StdoutLine: {'line': b'-- OpenNI 2 disabled because libusb-1.0 not found.\n'}
+[2.235671] (lidar_node) StdoutLine: {'line': b'-- LIBUSB_1_LIBRARY (missing: LIBUSB_1_INCLUDE_DIR) \n'}
+[2.240993] (lidar_node) StdoutLine: {'line': b"-- Checking for module 'libusb-1.0'\n"}
+[2.243914] (lidar_node) StdoutLine: {'line': b"--   No package 'libusb-1.0' found\n"}
+[2.246392] (lidar_node) StdoutLine: {'line': b'-- Could NOT find USB_10 (missing: USB_10_LIBRARY USB_10_INCLUDE_DIR) \n'}
+[2.246578] (lidar_node) StdoutLine: {'line': b'-- OpenNI disabled because libusb-1.0 not found.\n'}
+[2.250887] (lidar_node) StdoutLine: {'line': b"-- Checking for module 'libusb-1.0'\n"}
+[2.253730] (lidar_node) StdoutLine: {'line': b"--   No package 'libusb-1.0' found\n"}
+[2.256161] (lidar_node) StdoutLine: {'line': b'-- Could NOT find USB_10 (missing: USB_10_LIBRARY USB_10_INCLUDE_DIR) \n'}
+[2.256359] (lidar_node) StdoutLine: {'line': b'-- OpenNI 2 disabled because libusb-1.0 not found.\n'}
+[2.277663] (lidar_node) StdoutLine: {'line': b'-- Found Qhull: optimized;/usr/lib/x86_64-linux-gnu/libqhull.so;debug;/usr/lib/x86_64-linux-gnu/libqhull.so  \n'}
+[2.277868] (lidar_node) StdoutLine: {'line': b'-- QHULL found (include: /usr/include, lib: optimized;/usr/lib/x86_64-linux-gnu/libqhull.so;debug;/usr/lib/x86_64-linux-gnu/libqhull.so)\n'}
+[2.282244] (lidar_node) StdoutLine: {'line': b"-- Checking for module 'libusb-1.0'\n"}
+[2.285111] (lidar_node) StdoutLine: {'line': b"--   No package 'libusb-1.0' found\n"}
+[2.287582] (lidar_node) StdoutLine: {'line': b'-- Could NOT find USB_10 (missing: USB_10_LIBRARY USB_10_INCLUDE_DIR) \n'}
+[2.287785] (lidar_node) StdoutLine: {'line': b'-- OpenNI disabled because libusb-1.0 not found.\n'}
+[2.298892] (lidar_node) StdoutLine: {'line': b'-- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so  \n'}
+[2.299925] (lidar_node) StdoutLine: {'line': b'-- Found PCL_KDTREE: /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so  \n'}
+[2.301213] (lidar_node) StdoutLine: {'line': b'-- Found PCL_OCTREE: /usr/lib/x86_64-linux-gnu/libpcl_octree.so  \n'}
+[2.302364] (lidar_node) StdoutLine: {'line': b'-- Found PCL_SEARCH: /usr/lib/x86_64-linux-gnu/libpcl_search.so  \n'}
+[2.303535] (lidar_node) StdoutLine: {'line': b'-- Found PCL_SAMPLE_CONSENSUS: /usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so  \n'}
+[2.304437] (lidar_node) StdoutLine: {'line': b'-- Found PCL_FILTERS: /usr/lib/x86_64-linux-gnu/libpcl_filters.so  \n'}
+[2.305102] (lidar_node) StdoutLine: {'line': b'-- Found PCL_2D: /usr/include/pcl-1.10  \n'}
+[2.305901] (lidar_node) StdoutLine: {'line': b'-- Found PCL_GEOMETRY: /usr/include/pcl-1.10  \n'}
+[2.306909] (lidar_node) StdoutLine: {'line': b'-- Found PCL_IO: /usr/lib/x86_64-linux-gnu/libpcl_io.so  \n'}
+[2.308014] (lidar_node) StdoutLine: {'line': b'-- Found PCL_FEATURES: /usr/lib/x86_64-linux-gnu/libpcl_features.so  \n'}
+[2.309145] (lidar_node) StdoutLine: {'line': b'-- Found PCL_ML: /usr/lib/x86_64-linux-gnu/libpcl_ml.so  \n'}
+[2.310235] (lidar_node) StdoutLine: {'line': b'-- Found PCL_SEGMENTATION: /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so  \n'}
+[2.310332] (-) TimerEvent: {}
+[2.311482] (lidar_node) StdoutLine: {'line': b'-- Found PCL_VISUALIZATION: /usr/lib/x86_64-linux-gnu/libpcl_visualization.so  \n'}
+[2.312637] (lidar_node) StdoutLine: {'line': b'-- Found PCL_SURFACE: /usr/lib/x86_64-linux-gnu/libpcl_surface.so  \n'}
+[2.313951] (lidar_node) StdoutLine: {'line': b'-- Found PCL_REGISTRATION: /usr/lib/x86_64-linux-gnu/libpcl_registration.so  \n'}
+[2.315154] (lidar_node) StdoutLine: {'line': b'-- Found PCL_KEYPOINTS: /usr/lib/x86_64-linux-gnu/libpcl_keypoints.so  \n'}
+[2.316330] (lidar_node) StdoutLine: {'line': b'-- Found PCL_TRACKING: /usr/lib/x86_64-linux-gnu/libpcl_tracking.so  \n'}
+[2.317484] (lidar_node) StdoutLine: {'line': b'-- Found PCL_RECOGNITION: /usr/lib/x86_64-linux-gnu/libpcl_recognition.so  \n'}
+[2.318739] (lidar_node) StdoutLine: {'line': b'-- Found PCL_STEREO: /usr/lib/x86_64-linux-gnu/libpcl_stereo.so  \n'}
+[2.319875] (lidar_node) StdoutLine: {'line': b'-- Found PCL_APPS: /usr/lib/x86_64-linux-gnu/libpcl_apps.so  \n'}
+[2.320902] (lidar_node) StdoutLine: {'line': b'-- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.10  \n'}
+[2.321619] (lidar_node) StdoutLine: {'line': b'-- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.10  \n'}
+[2.322796] (lidar_node) StdoutLine: {'line': b'-- Found PCL_OUTOFCORE: /usr/lib/x86_64-linux-gnu/libpcl_outofcore.so  \n'}
+[2.323967] (lidar_node) StdoutLine: {'line': b'-- Found PCL_PEOPLE: /usr/lib/x86_64-linux-gnu/libpcl_people.so  \n'}
+[2.411111] (-) TimerEvent: {}
+[2.494679] (lidar_node) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)\n'}
+[2.511505] (-) TimerEvent: {}
+[2.600088] (lidar_node) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[2.604775] (lidar_node) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[2.605090] (lidar_node) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[2.605225] (lidar_node) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[2.605928] (lidar_node) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[2.606034] (lidar_node) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[2.606602] (lidar_node) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[2.607355] (lidar_node) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[2.607463] (lidar_node) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[2.607844] (lidar_node) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[2.611065] (lidar_node) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.611629] (-) TimerEvent: {}
+[2.642051] (lidar_node) StdoutLine: {'line': b'-- Generating done\n'}
+[2.656176] (lidar_node) StdoutLine: {'line': b'-- Build files have been written to: /home/diego/csagv_foxy/build/lidar_node\n'}
+[2.679321] (lidar_node) CommandEnded: {'returncode': 0}
+[2.680207] (lidar_node) JobProgress: {'identifier': 'lidar_node', 'progress': 'build'}
+[2.680536] (lidar_node) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/diego/csagv_foxy/build/lidar_node', '--', '-j6', '-l6'], 'cwd': '/home/diego/csagv_foxy/build/lidar_node', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'it:en'), ('USER', 'diego'), ('LC_TIME', 'de_DE.UTF-8'), ('SSH_AGENT_PID', '958'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/diego'), ('OLDPWD', '/home/diego'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'de_DE.UTF-8'), ('MANAGERPID', '835'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2370'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/diego/csagv_foxy/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'diego'), ('JOURNAL_STREAM', '8:27339'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'diego'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/Ubuntu:@/tmp/.ICE-unix/1020,unix/Ubuntu:/tmp/.ICE-unix/1020'), ('INVOCATION_ID', 'bd64ae3125764dd98123abaffcde7904'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'de_DE.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'it_IT.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'de_DE.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/diego/csagv_foxy/install/nmpc_node:/home/diego/csagv_foxy/install/lidar_node:/opt/ros/foxy::'), ('SHELL', '/bin/bash'), ('LC_NAME', 'de_DE.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:86d34b99-401d-40ea-9bca-4145879aab32'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'de_DE.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'de_DE.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/diego/csagv_foxy/build/lidar_node'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/diego/csagv_foxy/install/nmpc_node/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'de_DE.UTF-8'), ('LC_PAPER', 'de_DE.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/diego/csagv_foxy/install/lidar_node:/home/diego/csagv_foxy/install/nmpc_node:/opt/ros/foxy:')]), 'shell': False}
+[2.712049] (-) TimerEvent: {}
+[2.718411] (lidar_node) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target lidar_node\x1b[0m\n'}
+[2.779855] (lidar_node) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/lidar_node.dir/src/lidar_node.cpp.o\x1b[0m\n'}
+[2.813160] (-) TimerEvent: {}
+[2.913479] (-) TimerEvent: {}
+[3.014255] (-) TimerEvent: {}
+[3.114761] (-) TimerEvent: {}
+[3.215344] (-) TimerEvent: {}
+[3.315820] (-) TimerEvent: {}
+[3.416343] (-) TimerEvent: {}
+[3.516860] (-) TimerEvent: {}
+[3.617414] (-) TimerEvent: {}
+[3.718997] (-) TimerEvent: {}
+[3.819425] (-) TimerEvent: {}
+[3.919958] (-) TimerEvent: {}
+[4.020535] (-) TimerEvent: {}
+[4.121020] (-) TimerEvent: {}
+[4.221548] (-) TimerEvent: {}
+[4.323056] (-) TimerEvent: {}
+[4.423569] (-) TimerEvent: {}
+[4.524102] (-) TimerEvent: {}
+[4.624608] (-) TimerEvent: {}
+[4.725138] (-) TimerEvent: {}
+[4.825712] (-) TimerEvent: {}
+[4.926274] (-) TimerEvent: {}
+[5.026757] (-) TimerEvent: {}
+[5.127271] (-) TimerEvent: {}
+[5.227790] (-) TimerEvent: {}
+[5.328374] (-) TimerEvent: {}
+[5.428837] (-) TimerEvent: {}
+[5.529428] (-) TimerEvent: {}
+[5.630880] (-) TimerEvent: {}
+[5.731252] (-) TimerEvent: {}
+[5.831933] (-) TimerEvent: {}
+[5.932475] (-) TimerEvent: {}
+[6.032992] (-) TimerEvent: {}
+[6.133515] (-) TimerEvent: {}
+[6.234026] (-) TimerEvent: {}
+[6.334576] (-) TimerEvent: {}
+[6.435065] (-) TimerEvent: {}
+[6.535599] (-) TimerEvent: {}
+[6.636148] (-) TimerEvent: {}
+[6.736692] (-) TimerEvent: {}
+[6.837215] (-) TimerEvent: {}
+[6.937827] (-) TimerEvent: {}
+[7.038291] (-) TimerEvent: {}
+[7.139351] (-) TimerEvent: {}
+[7.239883] (-) TimerEvent: {}
+[7.340425] (-) TimerEvent: {}
+[7.440943] (-) TimerEvent: {}
+[7.541424] (-) TimerEvent: {}
+[7.642959] (-) TimerEvent: {}
+[7.743501] (-) TimerEvent: {}
+[7.844049] (-) TimerEvent: {}
+[7.944551] (-) TimerEvent: {}
+[8.045088] (-) TimerEvent: {}
+[8.145642] (-) TimerEvent: {}
+[8.246168] (-) TimerEvent: {}
+[8.346686] (-) TimerEvent: {}
+[8.447192] (-) TimerEvent: {}
+[8.548089] (-) TimerEvent: {}
+[8.649229] (-) TimerEvent: {}
+[8.749812] (-) TimerEvent: {}
+[8.850290] (-) TimerEvent: {}
+[8.950776] (-) TimerEvent: {}
+[9.051093] (-) TimerEvent: {}
+[9.151821] (-) TimerEvent: {}
+[9.252392] (-) TimerEvent: {}
+[9.353060] (-) TimerEvent: {}
+[9.454464] (-) TimerEvent: {}
+[9.554942] (-) TimerEvent: {}
+[9.655468] (-) TimerEvent: {}
+[9.756298] (-) TimerEvent: {}
+[9.856729] (-) TimerEvent: {}
+[9.958293] (-) TimerEvent: {}
+[10.058836] (-) TimerEvent: {}
+[10.159343] (-) TimerEvent: {}
+[10.259852] (-) TimerEvent: {}
+[10.360361] (-) TimerEvent: {}
+[10.460929] (-) TimerEvent: {}
+[10.561412] (-) TimerEvent: {}
+[10.662004] (-) TimerEvent: {}
+[10.762467] (-) TimerEvent: {}
+[10.862994] (-) TimerEvent: {}
+[10.963497] (-) TimerEvent: {}
+[11.064094] (-) TimerEvent: {}
+[11.165577] (-) TimerEvent: {}
+[11.266132] (-) TimerEvent: {}
+[11.366519] (-) TimerEvent: {}
+[11.467164] (-) TimerEvent: {}
+[11.568640] (-) TimerEvent: {}
+[11.669156] (-) TimerEvent: {}
+[11.770385] (-) TimerEvent: {}
+[11.871225] (-) TimerEvent: {}
+[11.971717] (-) TimerEvent: {}
+[12.072252] (-) TimerEvent: {}
+[12.172748] (-) TimerEvent: {}
+[12.273369] (-) TimerEvent: {}
+[12.373776] (-) TimerEvent: {}
+[12.474387] (-) TimerEvent: {}
+[12.574929] (-) TimerEvent: {}
+[12.675411] (-) TimerEvent: {}
+[12.775938] (-) TimerEvent: {}
+[12.876497] (-) TimerEvent: {}
+[12.976732] (-) TimerEvent: {}
+[13.077535] (-) TimerEvent: {}
+[13.177817] (-) TimerEvent: {}
+[13.278555] (-) TimerEvent: {}
+[13.379137] (-) TimerEvent: {}
+[13.479714] (-) TimerEvent: {}
+[13.580157] (-) TimerEvent: {}
+[13.680715] (-) TimerEvent: {}
+[13.781211] (-) TimerEvent: {}
+[13.881793] (-) TimerEvent: {}
+[13.982311] (-) TimerEvent: {}
+[14.082827] (-) TimerEvent: {}
+[14.183351] (-) TimerEvent: {}
+[14.283722] (-) TimerEvent: {}
+[14.384257] (-) TimerEvent: {}
+[14.484772] (-) TimerEvent: {}
+[14.585289] (-) TimerEvent: {}
+[14.600572] (lidar_node) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable lidar_node\x1b[0m\n'}
+[14.685851] (-) TimerEvent: {}
+[14.786352] (-) TimerEvent: {}
+[14.887921] (-) TimerEvent: {}
+[14.988421] (-) TimerEvent: {}
+[15.088958] (-) TimerEvent: {}
+[15.189461] (-) TimerEvent: {}
+[15.289903] (-) TimerEvent: {}
+[15.390587] (-) TimerEvent: {}
+[15.491071] (-) TimerEvent: {}
+[15.591647] (-) TimerEvent: {}
+[15.692143] (-) TimerEvent: {}
+[15.792571] (-) TimerEvent: {}
+[15.893150] (-) TimerEvent: {}
+[15.993740] (-) TimerEvent: {}
+[16.094252] (-) TimerEvent: {}
+[16.139526] (lidar_node) StdoutLine: {'line': b'[100%] Built target lidar_node\n'}
+[16.149959] (lidar_node) CommandEnded: {'returncode': 0}
+[16.152295] (lidar_node) JobProgress: {'identifier': 'lidar_node', 'progress': 'install'}
+[16.162447] (lidar_node) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/diego/csagv_foxy/build/lidar_node'], 'cwd': '/home/diego/csagv_foxy/build/lidar_node', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'it:en'), ('USER', 'diego'), ('LC_TIME', 'de_DE.UTF-8'), ('SSH_AGENT_PID', '958'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/diego'), ('OLDPWD', '/home/diego'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'de_DE.UTF-8'), ('MANAGERPID', '835'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2370'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/diego/csagv_foxy/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'diego'), ('JOURNAL_STREAM', '8:27339'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'diego'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/Ubuntu:@/tmp/.ICE-unix/1020,unix/Ubuntu:/tmp/.ICE-unix/1020'), ('INVOCATION_ID', 'bd64ae3125764dd98123abaffcde7904'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'de_DE.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'it_IT.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'de_DE.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/diego/csagv_foxy/install/nmpc_node:/home/diego/csagv_foxy/install/lidar_node:/opt/ros/foxy::'), ('SHELL', '/bin/bash'), ('LC_NAME', 'de_DE.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:86d34b99-401d-40ea-9bca-4145879aab32'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'de_DE.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'de_DE.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/diego/csagv_foxy/build/lidar_node'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/diego/csagv_foxy/install/nmpc_node/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'de_DE.UTF-8'), ('LC_PAPER', 'de_DE.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/diego/csagv_foxy/install/lidar_node:/home/diego/csagv_foxy/install/nmpc_node:/opt/ros/foxy:')]), 'shell': False}
+[16.169570] (lidar_node) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[16.169886] (lidar_node) StdoutLine: {'line': b'-- Installing: /home/diego/csagv_foxy/install/lidar_node/lib/lidar_node/lidar_node\n'}
+[16.171576] (lidar_node) StdoutLine: {'line': b'-- Set runtime path of "/home/diego/csagv_foxy/install/lidar_node/lib/lidar_node/lidar_node" to ""\n'}
+[16.171737] (lidar_node) StdoutLine: {'line': b'-- Installing: /home/diego/csagv_foxy/install/lidar_node/share/ament_index/resource_index/package_run_dependencies/lidar_node\n'}
+[16.171866] (lidar_node) StdoutLine: {'line': b'-- Installing: /home/diego/csagv_foxy/install/lidar_node/share/ament_index/resource_index/parent_prefix_path/lidar_node\n'}
+[16.172016] (lidar_node) StdoutLine: {'line': b'-- Installing: /home/diego/csagv_foxy/install/lidar_node/share/lidar_node/environment/ament_prefix_path.sh\n'}
+[16.172228] (lidar_node) StdoutLine: {'line': b'-- Installing: /home/diego/csagv_foxy/install/lidar_node/share/lidar_node/environment/ament_prefix_path.dsv\n'}
+[16.172365] (lidar_node) StdoutLine: {'line': b'-- Installing: /home/diego/csagv_foxy/install/lidar_node/share/lidar_node/environment/path.sh\n'}
+[16.172506] (lidar_node) StdoutLine: {'line': b'-- Installing: /home/diego/csagv_foxy/install/lidar_node/share/lidar_node/environment/path.dsv\n'}
+[16.172643] (lidar_node) StdoutLine: {'line': b'-- Installing: /home/diego/csagv_foxy/install/lidar_node/share/lidar_node/local_setup.bash\n'}
+[16.172766] (lidar_node) StdoutLine: {'line': b'-- Installing: /home/diego/csagv_foxy/install/lidar_node/share/lidar_node/local_setup.sh\n'}
+[16.172891] (lidar_node) StdoutLine: {'line': b'-- Installing: /home/diego/csagv_foxy/install/lidar_node/share/lidar_node/local_setup.zsh\n'}
+[16.173054] (lidar_node) StdoutLine: {'line': b'-- Installing: /home/diego/csagv_foxy/install/lidar_node/share/lidar_node/local_setup.dsv\n'}
+[16.173189] (lidar_node) StdoutLine: {'line': b'-- Installing: /home/diego/csagv_foxy/install/lidar_node/share/lidar_node/package.dsv\n'}
+[16.173254] (lidar_node) StdoutLine: {'line': b'-- Installing: /home/diego/csagv_foxy/install/lidar_node/share/ament_index/resource_index/packages/lidar_node\n'}
+[16.173310] (lidar_node) StdoutLine: {'line': b'-- Installing: /home/diego/csagv_foxy/install/lidar_node/share/lidar_node/cmake/lidar_nodeConfig.cmake\n'}
+[16.173364] (lidar_node) StdoutLine: {'line': b'-- Installing: /home/diego/csagv_foxy/install/lidar_node/share/lidar_node/cmake/lidar_nodeConfig-version.cmake\n'}
+[16.173422] (lidar_node) StdoutLine: {'line': b'-- Installing: /home/diego/csagv_foxy/install/lidar_node/share/lidar_node/package.xml\n'}
+[16.177091] (lidar_node) CommandEnded: {'returncode': 0}
+[16.194764] (lidar_node) JobEnded: {'identifier': 'lidar_node', 'rc': 0}
+[16.195990] (-) TimerEvent: {}
+[16.196218] (-) EventReactorShutdown: {}

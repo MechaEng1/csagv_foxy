@@ -97,6 +97,8 @@ class NMPCNode(Node):
             )
         )
 
+        mpc.set_rterm(v = 60/3, omega = 30/1) # Penalità sui comandi
+
         # Vincoli sui controlli
         mpc.bounds['lower', '_u', 'v'] = 0.0  # Velocità lineare minima
         mpc.bounds['upper', '_u', 'v'] = 1.5  # Velocità lineare massima
